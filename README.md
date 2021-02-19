@@ -42,7 +42,10 @@ PROMPT='$(kube_ps1)'$PROMPT
 source /path/to/kube-ps1.sh
 PS1='[\u@\h \W $(kube_ps1)]\$ '
 ```
-
+Or with githelper :
+```
+PS1='[\w $(git_meta_ps1)$(kube_ps1)]\$ '
+```
 ### Zsh Plugin Managers
 
 #### Using [zplugin](https://github.com/zdharma/zplugin)
